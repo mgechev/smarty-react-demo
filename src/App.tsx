@@ -11,16 +11,16 @@ class App extends React.Component {
   render() {
     return (
       <Router history={history}>
-        <p className="App">
+        <div className="App">
           <Link to="/intro">Intro</Link>
           <Link to="/main">Main</Link>
-          <p>
+          <div>
             <Switch>
               <Route path="/intro" component={AsyncComponent(() => import('./intro/Intro'))} />
               <Route path="/main" component={AsyncComponent(() => import('./main/Main'))} />
             </Switch>
-          </p>
-        </p>
+          </div>
+        </div>
       </Router>
     );
   }
