@@ -12,8 +12,7 @@ export default class Intro extends React.Component {
         </>
         <p>Intro</p>
         <Switch>
-          <Route path="/intro/login" component={AsyncComponent(() => import('./login/login'))} />
-          {/* <Route path="/intro/parent/personalize" component={AsyncComponent(() => import('./intro/parent/Personalize'))} /> */}
+          <Route path="/intro/login" component={AsyncComponent(() => import('./login/Login'))} />
         </Switch>
       </>
     );
