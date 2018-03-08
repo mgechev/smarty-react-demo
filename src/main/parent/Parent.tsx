@@ -24,6 +24,7 @@ export default class Parent extends React.Component {
             component={AsyncComponent(() => import('./personalize/Personalize'))}
           />
           <Route path="/main/parent/reward" component={AsyncComponent(() => import('./reward/Reward'))} />
+          <Route path="/main/parent/reward/:id" component={AsyncComponent(() => import('./reward/Reward'))} />
           <Route path="/main/parent/home" component={AsyncComponent(() => import('./home/Home'))} />
           <Route path="/main/parent/faq" component={AsyncComponent(() => import('./faq/Faq'))} />
           <Route path="/main/parent/info" component={AsyncComponent(() => import('./info/Info'))} />
